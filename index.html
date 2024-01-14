@@ -27,8 +27,6 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
-    <!-- Header -->
-  <!-- Header -->
 
 
 
@@ -82,45 +80,38 @@
     </article>
 </section>
 
-
-        <!-- Contact Section -->
-        <section class="split">
-            <section>
-                <div class="contact-method">
-                    <span class="icon solid alt fa-envelope"></span>
-                    <h3>Email</h3>
-                    <a href="mailto:sawanttejas010@gmail.com">sawanttejas010@gmail.com</a>
-                </div>
-            </section>
-            <section>
-                <div class="contact-method">
-                    <span class="icon solid alt fa-phone"></span>
-                    <h3>Phone</h3>
-                    <span>(+91) 9960082659 </span>
-                </div>
-            </section>
-            <section>
-                <div class="contact-method">
-                    <span class="icon solid alt fa-home"></span>
-                    <h3>Address</h3>
-                    <span>26, Nitin Niwas, Datt Chowk, <br />
-                        Near TJSB Bank, Badlapur (W), PIN CODE- 421503<br />
-                        Maharashtra, India</span>
-                </div>
-            </section>
-        </section>
+<!-- Contact Section -->
+<section id="contact" class="inner">
+    <div class="contact-method">
+        <span class="icon solid alt fa-envelope"></span>
+        <h3>Email</h3>
+        <a href="mailto:sawanttejas010@gmail.com">sawanttejas010@gmail.com</a>
     </div>
+    <div class="contact-method">
+        <span class="icon solid alt fa-phone"></span>
+        <h3>Phone</h3>
+        <span>(+91) 9960082659 </span>
+    </div>
+    <div class="contact-method">
+        <span class="icon solid alt fa-home"></span>
+        <h3>Address</h3>
+        <span>26, Nitin Niwas, Datt Chowk, <br />
+            Near TJSB Bank, Badlapur (W), PIN CODE- 421503<br />
+            Maharashtra, India</span>
+    </div>
+    <div class="contact-method">
+        <span class="icon brands alt fa-github"></span>
+        <h3>GitHub</h3>
+        <a href="https://github.com/tejsaw" target="_blank">GitHub</a>
+    </div>
+    <div class="contact-method">
+        <span class="icon brands alt fa-linkedin-in"></span>
+        <h3>Linked in</h3>
+        <a href="https://www.linkedin.com/in/tejassawant1996/" target="_blank">LinkedIn</a>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                <li><a href="https://github.com/tejsaw" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/tejassawant1996/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-            </ul>
-        </div>
-    </footer>
-</div>
+
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -130,6 +121,24 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+  // Ensure that the document is ready
+  $(document).ready(function() {
+    // Enable Scrolly for the Get Started button
+    $('.scrolly').scrolly();
+
+    // Add a smooth scrolling effect to internal links
+    $('a[href^="#"]').on('click', function (event) {
+      event.preventDefault();
+      var target = this.hash;
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+      }, 800, function () {
+        window.location.hash = target;
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
